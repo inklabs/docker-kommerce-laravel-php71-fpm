@@ -17,6 +17,7 @@ RUN yum -y update \
         && composer create-project \
         && php bin/initialize-test-db.php \
     ) \
+    && chown -R www-data.www-data /code/kommerce-laravel/storage \
     && rm kommerce-laravel.tgz \
     && yum -y remove wget gunzip \
     && yum clean all
