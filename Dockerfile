@@ -1,4 +1,4 @@
-FROM inklabs/php71-fpm
+FROM inklabs/php-fpm:7.1
 
 WORKDIR /usr/local/src
 
